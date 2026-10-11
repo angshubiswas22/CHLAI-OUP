@@ -1,0 +1,51 @@
+# ============================================================
+# Characterizing Human-Likeness in AI-Generated Poetry
+# A Zero-Shot Classification Study
+# Python 3.10+ recommended
+# Install with:  pip install -r requirements.txt
+# ============================================================
+
+# --- LLM APIs --------------------------------------------------
+# Poem generation (GPT-OSS-120B, Llama 3.3-70B, Qwen3-32B) via GroqCloud
+groq>=0.9.0
+# Zero-shot classification (Gemma 4-31B) via OpenRouter (OpenAI-compatible endpoint)
+openai>=1.30.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# --- Data handling ---------------------------------------------
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+tqdm>=4.66.0
+
+# --- Text and lexical analysis ---------------------------------
+# TTR, n-grams, TF-IDF, vocabulary overlap, evaluation metrics
+nltk>=3.8.1
+scikit-learn>=1.3.0
+
+# --- Visualisation ---------------------------------------------
+# Word clouds, heatmaps, bar charts, Venn diagrams
+matplotlib>=3.7.0
+seaborn>=0.12.0
+wordcloud>=1.9.3
+matplotlib-venn>=0.11.9
+
+# --- Traditional detectors (GPU recommended) -------------------
+# Log-Likelihood, Log-Rank Ratio, Binoculars, Fast-DetectGPT
+torch>=2.1.0
+transformers>=4.40.0
+accelerate>=0.30.0
+sentencepiece>=0.2.0
+safetensors>=0.4.0
+
+# --- Notebooks (experiments were run on Google Colab) ----------
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
+# ------------------------------------------------------------
+# TODO (maintainers): compare against the imports in code/ and
+# add any package missing here (for example the framework used
+# for the survey web app). For exact reproducibility, replace
+# the ">=" bounds with the versions from `pip freeze`.
+# ------------------------------------------------------------
